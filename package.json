@@ -1,0 +1,22 @@
+{
+    "name": "@lectrum/eslint-config-core",
+    "version": "1.0.3",
+    "main": "index.js",
+    "repository": "git@git.lectrum.io:npm/configs/eslint/core.git",
+    "author": "d.vakatsiienko <d.vakatsiienko@lectrum.io>",
+    "private": false,
+    "licence": "MIT",
+    "keyword": ["eslint", "eslintconfig"],
+    "scripts": {
+        "build":
+            "echo 'module.exports = ' > index.js && js-yaml src/.eslintrc.yaml >> index.js",
+        "build1": "node scripts -build",
+        "prepublishOnly": "yarn build"
+    },
+    "devDependencies": {
+        "js-yaml": "~3.11.0"
+    },
+    "peerDependencies": {
+        "eslint": ">= 4.19"
+    }
+}
