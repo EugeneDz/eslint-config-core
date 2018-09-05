@@ -19,10 +19,9 @@ globals:
   __DEV__: false
   __STAGE__: false
   __PROD__: false
-  __PACKAGE_VERSION__: false
-  __BUILD_DATE__: false
-  __COMMIT_MESSAGE__: false
+  __TEST__: false
   __MODEL__: false
+  __: false
   React: false
   shallow: false
   render: false
@@ -33,12 +32,16 @@ plugins:
 - react
 - jest
 - babel
+- flowtype
 
 rules:
 
   # react-redux
   react-redux/mapStateToProps-no-store: 2
   react-redux/mapStateToProps-prefer-parameters-names: 2
+
+  # flowtype
+  flowtype/define-flow-type: 2
 
   # Jest
   jest/consistent-test-it:
@@ -187,9 +190,7 @@ rules:
   accessor-pairs: 2
   array-callback-return: 2
   block-scoped-var: 2
-  complexity:
-  - 2
-  - max: 10
+  complexity: 0
   curly: 2
   default-case: 2
   dot-location:
@@ -303,7 +304,7 @@ rules:
   - 2
   - 1tbs
   - allowSingleLine: true
-  camelcase: 2
+  camelcase: 0
   comma-dangle:
   - 2
   - arrays: always-multiline
@@ -341,11 +342,7 @@ rules:
   - err
   - evt
   - cb
-  id-length:
-  - 2
-  - exceptions:
-    - x
-    - y
+  id-length: 0
   implicit-arrow-linebreak: error
   indent:
   - 2
@@ -367,9 +364,7 @@ rules:
   - error
   - always
   - exceptAfterSingleLine: true
-  max-depth:
-  - 2
-  - 3
+  max-depth: 0
   max-len:
   - 2
   - 100
@@ -384,9 +379,7 @@ rules:
   max-params:
   - 2
   - 3
-  max-statements:
-  - 2
-  - 20
+  max-statements: 0
   max-statements-per-line:
   - 2
   - max: 1
@@ -452,9 +445,13 @@ rules:
   - 2
   - never
 
+  # ECMAScript 6
+  arrow-body-style: 0
+  arrow-parens: [2, 'always']
+
   # Babel
   babel/no-invalid-this: 2
   babel/quotes:
   - 2
   - single
-  babel/new-cap: 2
+  babel/new-cap: 0

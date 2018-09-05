@@ -1,17 +1,17 @@
-# Eslint core rules
+# Правила ESLint компании Lectrum
 
-In order to ensure a well-maintainable codebase, we use a strict code-tyle conention.
+Для обеспечения высокого уровня качества кода мы используем строгую конвенцию. Данный конфиг содержит набор правил с учётом таких инструментов как `flowtype`, `jest`, `react`, `react-redux`.
 
-## Installation
+## Установка
 
-Using `yarn`:
-
-```
-yarn add @lectrum/eslint-config-core babel-eslint eslint-plugin-react eslint-plugin-react-redux eslint-plugin-babel eslint-plugin-jest
-```
-
-Using `npm`
+С помощью `yarn`:
 
 ```
-npm i @lectrum/eslint-config-core babel-eslint eslint-plugin-react eslint-plugin-react-redux eslint-plugin-babel eslint-plugin-jest
+yarn add @lectrum/eslint-config-core
+```
+
+С помощью `npm`:
+
+```
+npm i @lectrum/eslint-config-core
 ```

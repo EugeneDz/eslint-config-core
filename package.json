@@ -1,22 +1,35 @@
 {
     "name": "@lectrum/eslint-config-core",
-    "version": "1.0.3",
-    "main": "index.js",
-    "repository": "git@git.lectrum.io:npm/configs/eslint/core.git",
-    "author": "d.vakatsiienko <d.vakatsiienko@lectrum.io>",
+    "version": "1.1.1",
+    "repository": "https://github.com/Lectrum/eslint-config-core",
+    "author": "dvakatsiienko <dvakatsiienko@lectrum.io>",
     "private": false,
     "licence": "MIT",
-    "keyword": ["eslint", "eslintconfig"],
     "scripts": {
-        "build":
-            "echo 'module.exports = ' > index.js && js-yaml src/.eslintrc.yaml >> index.js",
+        "build": "echo 'module.exports = ' > index.js && js-yaml src/.eslintrc.yaml >> index.js",
         "build1": "node scripts -build",
         "prepublishOnly": "yarn build"
     },
+    "dependencies": {
+        "eslint-plugin-babel": "^5.1.0",
+        "eslint-plugin-flowtype": "^2.50.0",
+        "eslint-plugin-jest": "^21.22.0",
+        "eslint-plugin-react": "^7.11.1",
+        "eslint-plugin-react-redux": "^2.3.0"
+    },
     "devDependencies": {
+        "@lectrum/config-commitlint": "^1.1.0",
+        "commitlint": "^7.1.2",
+        "cz-conventional-changelog": "^2.1.0",
+        "husky": "^1.0.0-rc.13",
         "js-yaml": "~3.11.0"
     },
     "peerDependencies": {
-        "eslint": ">= 4.19"
-    }
+        "eslint": ">= 5"
+    },
+    "main": "index.js",
+    "keyword": [
+        "eslint",
+        "eslintconfig"
+    ]
 }
