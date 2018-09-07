@@ -1,6 +1,6 @@
 {
     "name": "@lectrum/eslint-config-core",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "repository": "https://github.com/Lectrum/eslint-config-core",
     "author": "dvakatsiienko <dvakatsiienko@lectrum.io>",
     "private": false,

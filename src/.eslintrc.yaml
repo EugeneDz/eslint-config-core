@@ -34,6 +34,10 @@ plugins:
 - babel
 - flowtype
 
+settings:
+  react:
+    version: 16.5
+
 rules:
 
   # react-redux

@@ -35,6 +35,11 @@ module.exports =
     "babel",
     "flowtype"
   ],
+  "settings": {
+    "react": {
+      "version": 16.5
+    }
+  },
   "rules": {
     "react-redux/mapStateToProps-no-store": 2,
     "react-redux/mapStateToProps-prefer-parameters-names": 2,
