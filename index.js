@@ -451,7 +451,7 @@ module.exports =
     ],
     "max-params": [
       2,
-      3
+      4
     ],
     "max-statements": 0,
     "max-statements-per-line": [
