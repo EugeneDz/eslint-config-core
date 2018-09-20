@@ -379,7 +379,7 @@ rules:
     ignoreRegExpLiterals: true
   max-nested-callbacks:
   - 2
-  - 3
+  - 4
   max-params:
   - 2
   - 4
