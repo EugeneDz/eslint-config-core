@@ -178,7 +178,7 @@ module.exports =
         "allowImplicit": false
       }
     ],
-    "no-await-in-loop": 2,
+    "no-await-in-loop": 0,
     "no-compare-neg-zero": 2,
     "no-cond-assign": [
       2,
@@ -447,7 +447,7 @@ module.exports =
     ],
     "max-nested-callbacks": [
       2,
-      3
+      4
     ],
     "max-params": [
       2,
