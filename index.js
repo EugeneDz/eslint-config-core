@@ -381,7 +381,7 @@ module.exports =
     "eol-last": 2,
     "func-call-spacing": 2,
     "func-name-matching": 2,
-    "func-names": 2,
+    "func-names": 0,
     "func-style": [
       2,
       "declaration",
