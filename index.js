@@ -33,7 +33,8 @@ module.exports =
     "react",
     "jest",
     "babel",
-    "flowtype"
+    "flowtype",
+    "react-hooks"
   ],
   "settings": {
     "react": {
@@ -41,6 +42,7 @@ module.exports =
     }
   },
   "rules": {
+    "react-hooks/rules-of-hooks": 2,
     "react-redux/mapStateToProps-no-store": 2,
     "react-redux/mapStateToProps-prefer-parameters-names": 2,
     "flowtype/define-flow-type": 2,
@@ -69,7 +71,7 @@ module.exports =
     "jest/valid-expect": 2,
     "jest/valid-expect-in-promise": 2,
     "react/no-access-state-in-setstate": 2,
-    "react/no-children-prop": 2,
+    "react/no-children-prop": 0,
     "react/no-deprecated": 2,
     "react/no-danger": 2,
     "react/no-did-mount-set-state": 2,
@@ -325,7 +327,7 @@ module.exports =
     "no-path-concat": 2,
     "no-process-exit": 2,
     "no-restricted-modules": 2,
-    "no-sync": 2,
+    "no-sync": 0,
     "array-bracket-newline": [
       2,
       {
@@ -546,7 +548,7 @@ module.exports =
       2,
       "always"
     ],
-    "babel/no-invalid-this": 2,
+    "babel/no-invalid-this": 0,
     "babel/quotes": [
       2,
       "single"
