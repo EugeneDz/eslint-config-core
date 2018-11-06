@@ -6,7 +6,8 @@ module.exports =
     "sourceType": "module",
     "ecmaFeatures": {
       "impliedStrict": true,
-      "jsx": true
+      "jsx": true,
+      "legacyDecorators": true
     }
   },
   "env": {
@@ -315,7 +316,7 @@ module.exports =
     "no-undefined": 2,
     "no-unused-vars": 2,
     "no-use-before-define": 2,
-    "callback-return": 2,
+    "callback-return": 0,
     "global-require": 2,
     "handle-callback-err": [
       2,

@@ -6,6 +6,7 @@ parserOptions:
     ecmaFeatures:
         impliedStrict: true
         jsx: true
+        legacyDecorators: true
 
 env:
     browser: true
@@ -283,7 +284,7 @@ rules:
     no-undefined: 2
     no-unused-vars: 2
     no-use-before-define: 2
-    callback-return: 2
+    callback-return: 0
 
     # ESLint: Node.js and CommonJS
     global-require: 2
